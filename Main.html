@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title></title>
+</head>
+
+<body>
+
+    <script>
+
+        // will randomly return either ‘Rock’, ‘Paper’ or ‘Scissors’.
+        function computerPlay() {
+            let jugada = ["PIEDRA", "PAPEL", "TIJERA"],
+                computerSelection = jugada[Math.floor(Math.random() * jugada.length)];
+            // alert(computerSelection)
+        }
+
+        function playRound(playerSelection, computerSelection) {
+            // your code here!
+        }
+
+        
+        let playerSelection = prompt("elija piedra, papel o tijera", "");
+        playerSelection = playerSelection.toUpperCase()
+        let computerSelection = computerPlay();
+        console.log(playRound(playerSelection, computerSelection));
+        alert(playerSelection)
+
+    </script>
+</body>
+
+</html>
